@@ -9,9 +9,5 @@ setup(name='django-centralniak-tools',
       author='Piotr Kilczuk',
       author_email='p.kilczuk@neumea.pl',
       url='https://github.com/centralniak/django-centralniak-tools',
-
-      # unsure...
-      packages=['djtools'],
-
       scripts=glob.glob('scripts/*')
 )
