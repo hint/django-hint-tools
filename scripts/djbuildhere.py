@@ -4,6 +4,7 @@
 Build
 """
 
+import glob
 import os
 import shutil
 
@@ -11,4 +12,5 @@ import djtools
 
 # would be good not to overwrite old _djtools_common.py
 
-shutil.copy(djtools.get_skel_dir(), os.getcwd())
+for file in glob(djtools.get_skel_dir() + '/*'):
+    shutil.copy(file, os.getcwd())
