@@ -10,7 +10,6 @@ setup(name='django-centralniak-tools',
       author_email='p.kilczuk@neumea.pl',
       url='https://github.com/centralniak/django-centralniak-tools',
       packages=('djtools',),
-      package_dir={'djtools': 'src/djtools'},
       package_data={'djtools': ['data/skel/*']},
       scripts=glob.glob('scripts/*'),
 )
