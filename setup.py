@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 from distutils.core import setup
+import glob
 
 setup(name='django-centralniak-tools',
       version='0.1',
@@ -12,5 +13,5 @@ setup(name='django-centralniak-tools',
       # unsure...
       packages=['djtools'],
 
-      
-     )
+      scripts=glob.glob('scripts/*')
+)
