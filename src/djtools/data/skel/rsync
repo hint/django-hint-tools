@@ -1,0 +1,19 @@
+#!/usr/bin/env python
+
+import os.path
+
+import djtools
+
+from _djtools_common import *
+
+# you should not need to adjust those, but feel free to adjust to your needs
+SRC = '%s@%s:%s' % (SSH_USER, SSH_HOST, SSH_MEDIA_DIR)
+DEST = LOCAL_MEDIA_DIR
+
+DIRS = (
+    # e.g.: 'cms_page_media', would work with DjangoCMS
+)
+
+################################################################################
+
+djtools.rsync(SRC, DEST, DIRS)
