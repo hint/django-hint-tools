@@ -7,10 +7,16 @@ Build
 import glob
 import os
 import shutil
+import sys
 
 import djtools
 
 # would be good not to overwrite old _djtools_common.py
 
+if len(sys.argv > 1):
+    destdir = sys.argv[1]
+else:
+    destdir = os.getcwd()
+
 for file in glob(djtools.get_skel_dir() + '/*'):
-    shutil.copy(file, os.getcwd())
+    shutil.copy(file, destdir)
