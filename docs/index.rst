@@ -18,6 +18,7 @@ Task specification
     :maxdepth: 2
 
     tools_make_buildenv_script
+    tools_update_requirements
 
 Coming soonish
 ==============
